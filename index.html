@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css" /> -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700i&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./index.css" />
+
+
+		<title>Document</title>
+	</head>
+	<body>
+		<div id="root">
+			<div id="title-container">
+				<img src="Incognito.png" id="icon" alt="Flowers in Chania">
+				<h1 id="title">Generate Random Password</h1>
+			</div>
+			<div id="pwd-container">
+				<input type="text"  id="pwd-field" />
+				<div id="button-container">
+					<div class="pwd-btn" id="copy-btn"><i id="copy-icon" data-feather="clipboard"></i></div>
+					<div class="pwd-btn" id="new-pwd-btn"><i data-feather="repeat"></i></div>
+				</div>
+			</div>
+			<div id="pwd-options-container">
+					<div id="pwd-len-container">
+						<label for="pwd-length" id="pwd-len-label">Password Length</label>
+						<input type="text" id="pwd-length" value="12" />
+						<input type="range" min="1" max="100" value="12" id="slider">
+
+					</div>
+				<div id="pwd-type-container">
+					<div class="char-option">
+						<input type="checkbox" class="pwd-option" id="uppercase" name="uppercase" checked/>
+						<label for="uppercase">Uppercase</label>
+					</div>
+					<div class="char-option">
+						<input type="checkbox" class="pwd-option" id="lowercase" name="lowercase"checked/>
+						<label for="lowercase">Lowercase</label>
+					</div>
+					<div class="char-option">
+						<input type="checkbox" class="pwd-option" id="number" name="number"checked/>
+						<label for="number">Numbers</label>
+					</div >
+					<div class="char-option">
+						<input type="checkbox" class="pwd-option" id="symbol" name="symbol" checked/>
+						<label for="symbol">Symbols</label>
+					</div>
+				</divc>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="index.js" ></script>
+	<script>
+		feather.replace();
+	</script>
+</html>
